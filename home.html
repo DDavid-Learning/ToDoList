@@ -34,7 +34,7 @@
                 </button>
             </div>
         </form>
-        <form id="edit-form">
+        <form id="edit-form" class="hide">
             <p>Edite sua tarefa:</p>
             <div class="form-control">
                 <input type="text" id="edit-input">
@@ -44,8 +44,8 @@
             </div>
             <button id="cancel-edit-btn">Cancelar</button>
         </form>
-        <div class="toolbar">
-            <div class="search">
+        <div id="toolbar">
+            <div id="search">
                 <h4>Pesquisar</h4>
                 <form>
                     <input type="text" id="search-input" placeholder="Buscar">
@@ -54,7 +54,7 @@
                     </button>
                 </form>
             </div>
-            <div class="filter">
+            <div id="filter">
                 <h4>Filtrar:</h4>
                 <select id="filter-select">
                     <option value="all">Todos</option>
@@ -64,7 +64,7 @@
             </div>
         </div>
         <div class="todo-list">
-            <div class="todo">
+            <div class="todo done">
                 <h3>Estudar JavaScript</h3>
                 <button class="finish-todo">
                     <i class="fa-solid fa-check"></i>
